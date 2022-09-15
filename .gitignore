@@ -2,3 +2,4 @@ node_modules/
 bin/create-boilerplate.js
 src/index.js
 src/types.js
+test-directory

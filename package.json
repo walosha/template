@@ -1,6 +1,6 @@
 {
-  "name": "create-boilerplate",
-  "version": "1.0.15",
+  "name": "@walosha/create-boilerplate",
+  "version": "0.0.1",
   "description": "Create  applications fast!",
   "main": "src/index.js",
   "bin": "bin/create-boilerplate.js",
@@ -17,6 +17,9 @@
     "inquirer": "^8.2.0",
     "ncp": "^2.0.0",
     "shelljs": "^0.8.4"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "devDependencies": {
     "@types/glob": "^7.2.0",

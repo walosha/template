@@ -1,13 +1,9 @@
-# create-mf-app
-
-[![npm version](https://badge.fury.io/js/create-mf-app.svg)](https://badge.fury.io/js/create-mf-app) [![npm version](https://img.shields.io/npm/dm/create-mf-app.svg)](https://badge.fury.io/js/create-mf-app)
-
-Creates a Module Federation application, API server, or library based on one of multiple different templates.
+# @walosha/create-boilerplate
 
 ## Usage
 
 ```
-npx create-mf-app
+npx @walosha/create-boilerplate
 ```
 
 These projects are not production complete. They are designed as lightweight projects that can be used to quickly prototype a new feature or library.
@@ -15,7 +11,7 @@ These projects are not production complete. They are designed as lightweight pro
 ## Programmatic Usage
 
 ```js
-const { buildProject } = require('create-mf-app')
+const { buildProject } = require('@walosha/create-boilerplate')
 
 buildProject({
   type: 'Application',
