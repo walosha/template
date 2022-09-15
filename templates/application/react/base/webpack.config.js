@@ -6,16 +6,13 @@ module.exports = {
   output: {
     publicPath: "http://localhost:{{PORT}}/",
   },
-
   resolve: {
     extensions: [".tsx", ".ts", ".jsx", ".js", ".json"],
   },
-
   devServer: {
     port: {{PORT}},
     historyApiFallback: true,
   },
-
   module: {
     rules: [
       {

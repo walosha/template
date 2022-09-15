@@ -11,7 +11,7 @@ import { Project } from '../src/types'
       type: 'input',
       message: 'Pick the name of your app:',
       name: 'name',
-      default: 'host',
+      default: 'playground',
     },
     {
       type: 'list',
@@ -36,7 +36,7 @@ import { Project } from '../src/types'
         type: 'input',
         message: 'Port number:',
         name: 'port',
-        default: '8080',
+        default: '7070',
       },
       {
         type: 'list',

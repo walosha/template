@@ -1,6 +1,6 @@
 {
   "name": "@walosha/create-boilerplate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Create  applications fast!",
   "main": "src/index.js",
   "bin": "bin/create-boilerplate.js",

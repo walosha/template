@@ -79,7 +79,6 @@ export const buildProject = async (project: Project) => {
         project.name
       )
       break
-
     case 'API Server':
       await ncp(
         path.join(__dirname, `../templates/${tempDir}/${framework}`),
@@ -100,17 +99,17 @@ export const buildProject = async (project: Project) => {
         if (profiler.CSS_EXTENSION === 'scss') {
           fs.unlinkSync(path.normalize(`${name}/src/index.css`))
           await ncp(
-              path.join(__dirname, '../templates/application-extras/tailwind'),
-              name
+            path.join(__dirname, '../templates/application-extras/tailwind'),
+            name
           )
 
           const packageJSON = JSON.parse(
-              fs.readFileSync(path.join(name, 'package.json'), 'utf8')
+            fs.readFileSync(path.join(name, 'package.json'), 'utf8')
           )
           packageJSON.devDependencies.tailwindcss = '^2.0.2'
           fs.writeFileSync(
-              path.join(name, 'package.json'),
-              JSON.stringify(packageJSON, null, 2)
+            path.join(name, 'package.json'),
+            JSON.stringify(packageJSON, null, 2)
           )
         }
       }
