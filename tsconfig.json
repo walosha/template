@@ -1,14 +1,14 @@
 {
   "compilerOptions": {
-    "target": "es2016",    
-    "outDir": ".",                           
-    "module": "commonjs",                          
-    "esModuleInterop": true,                       
-    "forceConsistentCasingInFileNames": true,      
-    "strict": true,                                
-    "skipLibCheck": true,                          
-
+    "target": "es2016",
+    "outDir": "./build",
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "declaration": true
   },
   "include": ["src/**/*", "bin/**/*"],
-  "exclude": ["node_modules", "**/*.spec.ts",".npm"]
+  "exclude": ["node_modules", "**/*.spec.ts", ".npm"]
 }
